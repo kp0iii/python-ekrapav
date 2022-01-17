@@ -15,5 +15,5 @@
 
 """
 
-nat = "ip nat inside source list ACL interface GigabitEthernet0/1 overload"
-print(nat)
+nat = "ip nat inside source list ACL interface FastEthernet0/1 overload"
+print(nat[:40] + "Gigabit" + nat[44:])
