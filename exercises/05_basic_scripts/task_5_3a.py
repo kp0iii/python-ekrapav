@@ -25,3 +25,14 @@ trunk_template = [
     "switchport mode trunk",
     "switchport trunk allowed vlan {}",
 ]
+
+port_mode = input('Введите режим работы интерфейса (access/trunk): ')
+if_ip = input('Введите тип и номер интерфейса: ')
+
+d_keys = ['access_template', 'trunk_template']
+template = dict.fromkeys(d_keys)
+template = dict(access=access_template, trunk=trunk_template)
+question_vlan = {'access': 'Введите номер VLAN: ', 'trunk': 'Введите разрешенные VLANы: '}
+vlan = input(str(question_vlan[port_mode]))
+print('interface {}\n'.format(if_ip) + str(template[port_mode])
+      .replace("'", "").replace("]", "").replace("[", "").replace(', ', '\n').format(vlan))
