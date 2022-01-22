@@ -25,9 +25,9 @@ ospf_route_result = '{:<20}{}\n'\
                     '{:<20}{}\n'\
                     '{:<20}{}\n'\
                     '{:<20}{}'\
-    .format("Prefix", ospf_route_temp[0].strip('[],'),
-            "AD/Metric", ospf_route_temp[1].strip('[],'),
-            "Next-Hop", ospf_route_temp[3].strip('[],'),
-            "Last update", ospf_route_temp[4].strip('[],'),
-            "Outbound Interface", ospf_route_temp[5].strip('[],'))
+    .format("Prefix", ospf_route_temp[0],
+            "AD/Metric", ospf_route_temp[1],
+            "Next-Hop", ospf_route_temp[3],
+            "Last update", ospf_route_temp[4],
+            "Outbound Interface", ospf_route_temp[5]).replace(',', '').replace(']', '').replace('[', '')
 print(ospf_route_result)
