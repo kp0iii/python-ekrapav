@@ -30,3 +30,18 @@ Out[1]: '11111111111111111111111111110000'
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 """
+
+ip = input('Введите IP-сеть в формате: 10.1.1.0/24: ')
+mask = ip[int(ip.find('/'))+1:]
+mask_bin = '1' * int(mask) + '0'* (32 - int(mask))
+ip = ip[:int(ip.find('/'))]
+ip_dec = ip.split('.')
+print('Network:\n{:<8}  {:<8}  {:<8}  {:<8}\n'
+      '{:08b}  {:08b}  {:008b}  {:08b}'
+      .format(int(ip_dec[0]), int(ip_dec[1]), int(ip_dec[2]), int(ip_dec[3]),
+              int(ip_dec[0]), int(ip_dec[1]), int(ip_dec[2]), int(ip_dec[3])))
+print('Mask:\n/'+mask+'\n'
+      '{:<8}  {:<8}  {:<8}  {:<8}\n'
+      '{:8}  {:8}  {:8}  {:8}'
+      .format(int(mask_bin[:8], 2), int(mask_bin[8:16], 2), int(mask_bin[16:24], 2), int(mask_bin[24:], 2),
+              mask_bin[:8], mask_bin[8:16], mask_bin[16:24], mask_bin[24:]))
