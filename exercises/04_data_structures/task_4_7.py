@@ -16,5 +16,5 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
-result = (bin(int(mac[:4], 16)) + bin(int(mac[5:9], 16)) + bin(int(mac[10:14], 16))).replace('b', '')
+result = (bin(int(mac[:4], 16)) + bin(int(mac[5:9], 16)) + bin(int(mac[10:14], 16))).replace('0b', '')
 print(result)
