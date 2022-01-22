@@ -28,7 +28,7 @@
 ip = "192.168.3.1"
 ip_dec = ip.split('.')
 print('{:<8d}  {:<8d}  {:<8d}  {:<8d}\n'
-      '{:08b}  {:08b}  {:008b}  {:08b}'
+      '{:08b}  {:08b}  {:08b}  {:08b}'
       .format(int(ip_dec[0]), int(ip_dec[1]), int(ip_dec[2]), int(ip_dec[3]),
               int(ip_dec[0]), int(ip_dec[1]), int(ip_dec[2]), int(ip_dec[3])))
 #print(ip_bin)
