@@ -17,3 +17,14 @@
 """
 
 ignore = ["duplex", "alias", "configuration"]
+
+file_name = 'config_sw1.txt'
+
+with open(file_name, 'r') as f:
+    print('$ python task_7_2.py ' + file_name)
+    for line in f:
+        if not line.startswith('!'):
+            for line_ign in ignore:
+                if line_ign in line:
+                    continue
+                print(line.rstrip())
