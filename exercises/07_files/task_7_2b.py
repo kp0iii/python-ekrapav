@@ -17,3 +17,15 @@
 """
 
 ignore = ["duplex", "alias", "configuration"]
+
+file_name_r = 'config_sw1.txt'
+file_name_w = 'config_sw1_result.txt'
+
+with open(file_name_r) as f_read, open(file_name_w, 'w') as f_write:
+    print('$ python task_7_2.py ' + file_name_r)
+    for line in f_read:
+        if not line.startswith('!'):
+            for line_ign in ignore:
+                if line_ign in line:
+                    continue
+                f_write.write(line)
