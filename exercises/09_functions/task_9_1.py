@@ -86,5 +86,5 @@ def generate_access_config(intf_vlan_mapping, access_template):
     return result
 
 
-result = generate_access_config(access_config, access_mode_template)
-print(result)
+result_main = generate_access_config(access_config, access_mode_template)
+print(result_main)
