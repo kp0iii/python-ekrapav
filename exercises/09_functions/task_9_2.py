@@ -78,15 +78,11 @@ def generate_trunk_config(trunk_config_template, trunk_mode_template):
     """
 
     result = []
-    vlans = ''
     for intf, vlan in trunk_config_template.items():
         result.append('interface ' + intf)
         for command in trunk_mode_template:
             if command.endswith('vlan'):
-                for vlan_con in vlan:
-                    vlans += ' ' + str(vlan_con)
-                result.append(command + vlans)
-                vlans = ''
+                result.append(command + ' ' + str(vlan).replace(' ', '').strip('[]'))
             else:
                 result.append(command)
     return result
