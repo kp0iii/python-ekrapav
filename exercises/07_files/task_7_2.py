@@ -39,3 +39,13 @@ interface Ethernet0/3
 ...
 
 """
+
+from pprint import pprint
+
+file_name = 'config_sw1.txt'
+
+with open(file_name, 'r') as f:
+    print('$ python task_7_2.py ' + file_name)
+    for line in f:
+        if not line.startswith('!'):
+            print(line.rstrip())
