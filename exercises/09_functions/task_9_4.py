@@ -89,7 +89,7 @@ def convert_config_to_dict(config_filename):
                     result_s = []
     return result
 
-
+from pprint import pprint
 result_main = convert_config_to_dict('config_sw1.txt')
-print(result_main)
+pprint(result_main)
 
