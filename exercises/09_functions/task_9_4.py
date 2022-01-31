@@ -77,7 +77,6 @@ def convert_config_to_dict(config_filename):
     """
 
     result = {}
-    result_s = []
     with open(config_filename, 'r') as f:
         for line in f:
             if line.split() and not line.startswith('!') and not ignore_command(line.split()[0], ignore):
