@@ -99,4 +99,3 @@ if __name__ == "__main__":
     topology = create_network_map(infiles)
     result_final = unique_network_map(topology)
     draw_topology(result_final)
-    test
