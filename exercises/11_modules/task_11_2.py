@@ -48,7 +48,3 @@ def create_network_map(file_func):
 
 if __name__ == "__main__":
     print(create_network_map(infiles))
-
-
-
-
