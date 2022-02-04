@@ -34,3 +34,32 @@
  '172.21.41.129', '172.21.41.130', '172.21.41.131', '172.21.41.132']
 
 """
+
+import ipaddress
+
+ip_list = ['8.8.4.4', '1.1.1.1-3', '172.21.41.128-172.21.41.132']
+
+
+def convert_ranges_to_ip_list(ip_address):
+    result = []
+    i = 0
+    for ip in ip_address:
+        if '-' not in ip:
+            result.append(ip)
+        elif len(ip) - ip.find('-') <= 4:
+            ipv4 = ipaddress.ip_address(ip.split('-')[0])
+            while int(ip.split('-')[1]) != int(str(ipv4).split('.')[-1])-1:
+                result.append(str(ipv4))
+                ipv4 += 1
+        else:
+            ipv4 = ipaddress.ip_address(ip.split('-')[0])
+            ipv4_range = ipaddress.ip_address(ip.split('-')[1]) + 1
+            while ipv4 != ipv4_range:
+                result.append(str(ipv4))
+                ipv4 += 1
+    return result
+
+
+if __name__ == "__main__":
+    final_result = convert_ranges_to_ip_list(ip_list)
+    print(final_result)
