@@ -17,3 +17,31 @@ IP-адрес считается доступным, если выполнени
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 """
+
+
+import subprocess
+
+ip_list = [
+    "8.8.8.8",
+    "8.8.4.4",
+    "127.0.0.1",
+    "10.1.1.1",
+]
+
+
+def ping_ip_addresses(ip_address):
+    ok = []
+    nok = []
+    for ip in ip_address:
+        result = subprocess.run(['ping', '-c', '3', '-n', ip], stdout=subprocess.DEVNULL)
+        if result.returncode:
+            nok.append(ip)
+        else:
+            ok.append(ip)
+    result_output = tuple([ok, nok])
+    return result_output
+
+
+if __name__ == "__main__":
+    final_result = ping_ip_addresses(ip_list)
+    print(final_result)
