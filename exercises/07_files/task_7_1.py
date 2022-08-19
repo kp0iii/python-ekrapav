@@ -20,11 +20,11 @@ with open('ospf.txt', 'r') as f:
     for line in f:
         _, ip, metric, _, next_h, last_upd, intf = line.split()
         print('{:<20}{}\n' \
-             '{:<20}{}\n' \
-             '{:<20}{}\n' \
-             '{:<20}{}\n' \
-             '{:<20}{}\n'.format("Prefix", ip,
-                               "AD/Metric", metric.strip('[]'),
-                               "Next-Hop", next_h.strip(','),
-                               "Last update", last_upd.strip(','),
-                               "Outbound Interface", intf))
+              '{:<20}{}\n' \
+              '{:<20}{}\n' \
+              '{:<20}{}\n' \
+              '{:<20}{}\n'.format("Prefix", ip,
+                                  "AD/Metric", metric.strip('[]'),
+                                  "Next-Hop", next_h.strip(','),
+                                  "Last update", last_upd.strip(','),
+                                  "Outbound Interface", intf))

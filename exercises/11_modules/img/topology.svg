@@ -17,7 +17,7 @@
 <text text-anchor="middle" x="168.86" y="-58.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">R3</text>
 </g>
 <!-- R4 -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>R4</title>
 <polygon fill="#006699" stroke="#006699" points="84.36,-223 7.36,-223 7.36,-150 84.36,-150 84.36,-223"/>
 <text text-anchor="middle" x="45.86" y="-182.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">R4</text>
@@ -30,22 +30,8 @@
 <text text-anchor="middle" x="25" y="-138.6" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/0</text>
 <text text-anchor="middle" x="105.19" y="-63.54" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/1</text>
 </g>
-<!-- SW1 -->
-<g id="node4" class="node">
-<title>SW1</title>
-<polygon fill="#006699" stroke="#006699" points="459.86,-223 369.86,-223 369.86,-150 459.86,-150 459.86,-223"/>
-<text text-anchor="middle" x="414.86" y="-182.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">SW1</text>
-</g>
-<!-- R3&#45;&#45;SW1 -->
-<g id="edge5" class="edge">
-<title>R3&#45;&#45;SW1</title>
-<path fill="none" stroke="green" stroke-dasharray="5,2" d="M207.57,-82.7C251.54,-104.51 323.21,-140.05 369.7,-163.1"/>
-<text text-anchor="middle" x="355.86" y="-120.8" font-family="Courier,monospace" font-size="14.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
-<text text-anchor="middle" x="344.7" y="-151.9" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/3</text>
-<text text-anchor="middle" x="232.57" y="-71.5" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/0</text>
-</g>
 <!-- R5 -->
-<g id="node6" class="node">
+<g id="node5" class="node">
 <title>R5</title>
 <polygon fill="#006699" stroke="#006699" points="207.36,-223 130.36,-223 130.36,-150 207.36,-150 207.36,-223"/>
 <text text-anchor="middle" x="168.86" y="-182.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">R5</text>
@@ -58,31 +44,31 @@
 <text text-anchor="middle" x="143.86" y="-138.43" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/0</text>
 <text text-anchor="middle" x="143.86" y="-102.92" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/2</text>
 </g>
-<!-- SW2 -->
-<g id="node2" class="node">
-<title>SW2</title>
-<polygon fill="#006699" stroke="#006699" points="705.86,-223 615.86,-223 615.86,-150 705.86,-150 705.86,-223"/>
-<text text-anchor="middle" x="660.86" y="-182.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">SW2</text>
+<!-- SW1 -->
+<g id="node6" class="node">
+<title>SW1</title>
+<polygon fill="#006699" stroke="#006699" points="459.86,-223 369.86,-223 369.86,-150 459.86,-150 459.86,-223"/>
+<text text-anchor="middle" x="414.86" y="-182.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">SW1</text>
 </g>
-<!-- R6 -->
-<g id="node7" class="node">
-<title>R6</title>
-<polygon fill="#006699" stroke="#006699" points="453.36,-347 376.36,-347 376.36,-274 453.36,-274 453.36,-347"/>
-<text text-anchor="middle" x="414.86" y="-306.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">R6</text>
-</g>
-<!-- SW1&#45;&#45;R6 -->
-<g id="edge1" class="edge">
-<title>SW1&#45;&#45;R6</title>
-<path fill="none" stroke="green" stroke-dasharray="5,2" d="M414.86,-223.12C414.86,-239.01 414.86,-257.7 414.86,-273.63"/>
-<text text-anchor="middle" x="464.86" y="-244.8" font-family="Courier,monospace" font-size="14.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
-<text text-anchor="middle" x="389.86" y="-262.43" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/1</text>
-<text text-anchor="middle" x="389.86" y="-226.92" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/5</text>
+<!-- R3&#45;&#45;SW1 -->
+<g id="edge5" class="edge">
+<title>R3&#45;&#45;SW1</title>
+<path fill="none" stroke="green" stroke-dasharray="5,2" d="M207.57,-82.7C251.54,-104.51 323.21,-140.05 369.7,-163.1"/>
+<text text-anchor="middle" x="356.86" y="-120.8" font-family="Courier,monospace" font-size="14.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="middle" x="344.7" y="-151.9" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/3</text>
+<text text-anchor="middle" x="232.57" y="-71.5" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/0</text>
 </g>
 <!-- R2 -->
-<g id="node5" class="node">
+<g id="node2" class="node">
 <title>R2</title>
 <polygon fill="#006699" stroke="#006699" points="637.36,-99 560.36,-99 560.36,-26 637.36,-26 637.36,-99"/>
 <text text-anchor="middle" x="598.86" y="-58.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">R2</text>
+</g>
+<!-- SW2 -->
+<g id="node3" class="node">
+<title>SW2</title>
+<polygon fill="#006699" stroke="#006699" points="705.86,-223 615.86,-223 615.86,-150 705.86,-150 705.86,-223"/>
+<text text-anchor="middle" x="660.86" y="-182.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">SW2</text>
 </g>
 <!-- R2&#45;&#45;SW2 -->
 <g id="edge4" class="edge">
@@ -99,6 +85,20 @@
 <text text-anchor="middle" x="583.86" y="-120.8" font-family="Courier,monospace" font-size="14.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
 <text text-anchor="middle" x="484.98" y="-152.88" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/2</text>
 <text text-anchor="middle" x="535.18" y="-84.83" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/0</text>
+</g>
+<!-- R6 -->
+<g id="node7" class="node">
+<title>R6</title>
+<polygon fill="#006699" stroke="#006699" points="453.36,-347 376.36,-347 376.36,-274 453.36,-274 453.36,-347"/>
+<text text-anchor="middle" x="414.86" y="-306.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">R6</text>
+</g>
+<!-- SW1&#45;&#45;R6 -->
+<g id="edge1" class="edge">
+<title>SW1&#45;&#45;R6</title>
+<path fill="none" stroke="green" stroke-dasharray="5,2" d="M414.86,-223.12C414.86,-239.01 414.86,-257.7 414.86,-273.63"/>
+<text text-anchor="middle" x="464.86" y="-244.8" font-family="Courier,monospace" font-size="14.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="middle" x="389.86" y="-262.43" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/1</text>
+<text text-anchor="middle" x="389.86" y="-226.92" font-family="Courier,monospace" font-size="14.00" fill="white">Eth0/5</text>
 </g>
 <!-- R1 -->
 <g id="node8" class="node">
